@@ -6,6 +6,11 @@ This repo contains notes and links related to my RustConf 2025 talk, _Cancelling
 * Video (coming soon!)
 * Follow me on [Bluesky](https://bsky.app/profile/sunshowers.io) and [Mastodon](https://hachyderm.io/@rain)
 
+Links to my blog:
+
+* [My RustConf talk on Unix signals](https://sunshowers.io/posts/beyond-ctrl-c-signals/)
+* [How (and why) nextest uses Tokio](https://sunshowers.io/posts/nextest-and-tokio/)
+
 ## Notes
 
 For more in-depth discussion of issues related to cancellation, see these two Oxide RFDs:
