@@ -58,7 +58,7 @@ A term often bandied about in these conversations is [_structured concurrency_](
 With structured concurrency, cancellation can be handled in two ways:
 
 * **If the parent future is cancelled, all child futures are immediately cancelled as well.** This is how Rust futures work today (and what the talk is about!)
-* **Cancellation of the parent future waits until child futures have exited.** This is not supported by Rust today.
+* **Cancellation of the parent future waits until child futures have exited.** This is not supported by Rust and Tokio today, though the `async-scoped` library [has an implementation](https://docs.rs/async-scoped/latest/async_scoped/struct.Scope.html#method.scope_and_block) of something similar.
 
 Another way to do structured concurrency is to use a [nursery pattern](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/#nurseries-a-structured-replacement-for-go-statements) as seen in [Trio](https://github.com/python-trio/trio). In Rust terms, that would be akin to the following strategy:
 
