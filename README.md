@@ -70,7 +70,7 @@ This has some beneficial properties with respect to cancellation. See [_Timeouts
 
 ### Relationship to panic safety
 
-As mentioned in the task, one way to cancel synchronous Rust code is to panic. But panicking has many of the same issues with invariant violations that async cancellations do.
+As mentioned in the talk, one way to cancel synchronous Rust code is to panic. But panicking has many of the same issues with invariant violations that async cancellations do.
 
 To lower the likelihood of bugs, Rust's [`std::sync::Mutex`](https://doc.rust-lang.org/std/sync/struct.Mutex.html) implements a _poisoning_ scheme. If a panic occurs while the mutex is held, the next time a thread acquires the mutex it will be in the poisoned state. It is possible to [clear a mutex's poisoned state](https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.clear_poison) in case you've restored invariants.
 
