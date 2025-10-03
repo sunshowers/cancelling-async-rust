@@ -3,7 +3,8 @@
 This repo contains notes and links related to my RustConf 2025 talk, _Cancelling async Rust_.
 
 * [Slides](https://docs.google.com/presentation/d/e/2PACX-1vTMc4EdHRf6ulz-xaAhZFGZwxJ7jPQgYWczT6pEIvwfXILV4ZEgMdLuoRh70bgh9SP7mxblEnyXuZD0/pub?start=false&loop=false&delayms=60000)
-* Video (coming soon!)
+* [Video](https://www.youtube.com/watch?v=zrv5Cy1R7r4)
+* [Written version of the talk](https://sunshowers.io/posts/cancelling-async-rust/) on my blog
 * Follow me on [Bluesky](https://bsky.app/profile/sunshowers.io) and [Mastodon](https://hachyderm.io/@rain)
 
 Links to my blog:
